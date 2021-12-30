@@ -1,0 +1,134 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    /* .project {
+        width: 100%;
+        margin: auto;
+    } */
+}
+
+.project {
+    max-width: 420px;
+}
+
+.projSubName {
+    font-size: 60%;
+}
+
+.description {
+    font-size: 125%;
+}
+
+.projName {
+    font-size: 200%;
+    border-bottom: 2px solid blue;
+}
+
+.progImg {
+    width: 330px;
+    height: 57vh;
+    object-fit: cover;
+}
+
+.headerImg {
+    width: 330px;
+    /* height: 57vh; */
+    object-fit: cover;
+}
+
+.gallery {
+    overflow: auto;
+}
+
+.ss {
+    width: 330px;
+    /* height: 77vh; */
+    object-fit: cover;
+    margin-bottom: 18px;
+    margin-left: 3px;
+    border: 2px solid #897d7d;
+}
+
+.content {
+    /* height: 84vh; */
+    overflow: auto;
+    padding: 30px 17px;
+    background-color: white;
+}
+
+.contentHome {
+    /* height: 84vh; */
+    overflow: auto;
+    padding: 30px 17px;
+    background-color: white;
+}
+
+.header {
+    background: #497093;
+    height: 9vh;
+    box-shadow: 0px 1px 15px 3px #497093;
+    z-index: 12;
+    position: relative;
+    /* position: static */
+}
+
+.release {
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+
+/* .footer {
+    height: 6vh;
+    background: #28659b;
+    position: static
+} */
+
+.title {
+    font-size: 180%;
+    position: absolute;
+    left: 40%;
+    bottom: 0%;
+    color: white;
+}
+
+.author {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.home {
+    position: absolute;
+    left: 89px;
+    bottom: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+#my_btn {
+    display: none;
+}
+
+#my_btn2 {
+    display: none;
+}
+
+.about {
+    font-size: 107%;
+}
+
+h3 {
+    border-left: 6px solid blue;
+    padding: 10px;
+}
+
+.fstDesc {
+    font-size: 110%;
+}
