@@ -1,27 +1,30 @@
-const express = require('express')
+const express = require('express');
 const app = express();
-// const hbs = require('hbs');
-const path = require('path')
+const server = require('http').Server(app);
+// const request = require('request');
 
-// app.set('view engine', 'hbs');
-// app.set('views', path.join(__dirname, 'views'));
+// var ExpressPeerServer = require('peer').ExpressPeerServer;
+
+// var options = {
+//     debug: true,
+//     allow_discovery: true
+// }
+
+
+// peerjs is the path that the peerjs server will be connected to.
+// app.use('/peerjs', ExpressPeerServer(server, options));
 
 app.use('/static', express.static('public'));
-
-// Simply app.use means “Run this on ALL requests” app.get
-//  means “Run this on a GET request, for the given URL”
-app.get('/', (req, res) => {
-    // res.render('home')
-    res.sendFile(path.join(__dirname, '/home.html'));
-})
 app.get('/chatapp', (req, res) => {
-    // res.render('chatapp')
-    res.sendFile(path.join(__dirname, '/chatapp.html'));
+    res.sendFile(__dirname + '/chatapp.html');
+})
 
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/home.html');
 })
 
 
 
-app.listen(process.env.PORT || 8000, () => {
-    console.log("App is listening on port 8000");
+server.listen(process.env.PORT || 5500, () => {
+    console.log("App is listening at port 5500")
 })
